@@ -1,6 +1,6 @@
 # DemoStoreQA
 
-Summary----
+Summary
  * Purpose : Class returns run results for automation test case to buy product on ToolsQA demo web site . 
  * Utility Class is imported from config package to extract values for variables from testConfig.properties file.
  * variable 'appURL' will contain the URL for toolQA demo web site as mentioned in the properties file. 
