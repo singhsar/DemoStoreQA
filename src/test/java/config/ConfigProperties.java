@@ -12,30 +12,29 @@ import java.util.Properties;
 
 import org.testng.Reporter;
 
-public class Utility {
+public class ConfigProperties {
 
 	Properties configFile = new Properties();
 
-	public Utility(){
+	public ConfigProperties(){
 		try {
 
 			configFile
 					.load(new FileInputStream(
 							"C://work/SeleniumWorkspaces/WS3/DemoStoreQA/src/test/java/config/testConfig.Properties"));
-			System.out.println("file got");
 		} catch (IOException e1) {
 
 			e1.printStackTrace();
 		}
 	}
-	public String getProperty(String key) {
-				
+	public  String getProperty(String key) {
+	
 		String value = this.configFile.getProperty(key);
-		System.out.println(value);
 		return value;
 	}
 	
 	public void reportLog(String step, String expected,String actual, String status){
 		Reporter.log(step+ " .Expected = "+expected +" and Actual = "+actual +" .Status- "+status);
+		
 	}
 }

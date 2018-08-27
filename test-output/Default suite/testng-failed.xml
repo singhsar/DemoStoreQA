@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="purchaseProduct.PurchaseProduct">
+      <class name="automation_framework.Test_NG_Class">
         <methods>
-          <include name="afterTest"/>
-          <include name="purchaseAnyProduct"/>
-          <include name="beforeTest"/>
-          <include name="selectProductCategory"/>
+          <include name="purchaseMagicMouse"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- purchaseProduct.PurchaseProduct -->
+      </class> <!-- automation_framework.Test_NG_Class -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
