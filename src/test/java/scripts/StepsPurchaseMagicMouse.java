@@ -24,7 +24,8 @@ import utility.ExcelUtils;
 import config.ConfigProperties;
 
 
-public class StepsPurchaseMagicMouse {
+public class StepsPurchaseMagicMouse{
+
 
 private WebDriver driver;
 ConfigProperties getConfig=new ConfigProperties();
@@ -106,10 +107,16 @@ public void addToCartMagicMouse(){
 		WebElement One_Product_Added_To_Cart=Accessories_Page.Magic_Mouse.One_Product_Added_To_Cart(driver); 
 		waitAfterClickingAddToCart.until(ExpectedConditions.visibilityOf(One_Product_Added_To_Cart));
 		status="Passed";
-    } catch (Exception e1) {
+    }
+
+    catch (Exception e1) {
 		status="Failed";
 		e1.printStackTrace();
+		
 	}
+
+    	
+
 
 	System.out.println(testStep);
 	getConfig.reportLog(testStep, "Clicking Add to Cart for  "+ "Magic Mouse", "Done", status); 
